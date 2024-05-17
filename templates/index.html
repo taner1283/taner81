@@ -1,9 +1,10 @@
 {% extends 'layout.html' %}
+{% load static %}
 {% block content %}
 
     <div class="row">
         <div class="col-md-12">
-            <h1>myapp</h1>
+            <h1 class="myHeader">myapp</h1>
         </div>
     </div>
 
@@ -11,7 +12,7 @@
         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam eius laborum mollitia tempore? Animi aperiam commodi culpa earum eligendi eos itaque mollitia nulla sapiente voluptatem. Nobis quas sapiente voluptatibus!</span><span>A cumque cupiditate dignissimos distinctio dolore doloribus earum eum eveniet excepturi fuga fugit iste maxime minima modi, necessitatibus neque nesciunt nihil odit officia qui quibusdam quis temporibus totam ut voluptates!</span><span>Eaque maiores mollitia sequi suscipit tempore. Accusamus aperiam assumenda, debitis, deserunt, distinctio dolor eos ex facere id illum impedit ipsum laborum minima molestiae numquam officiis quis rem repellat suscipit vitae.</span><span>Cupiditate dolorum quia unde. Ab adipisci consequatur deleniti dolor ea neque quae quibusdam reprehenderit velit voluptas. Corporis deleniti hic molestias non omnis pariatur quidem vitae voluptas. Accusamus expedita hic quae?</span><span>Accusantium aspernatur beatae consequatur corporis cupiditate, deserunt eius enim excepturi fugit id, minima molestias necessitatibus numquam perferendis quas quasi quibusdam rem rerum sit suscipit temporibus veniam veritatis vero voluptas voluptatum.</span><span>Delectus distinctio placeat tempore. Cum distinctio ducimus exercitationem explicabo ipsam natus, quod tempore voluptate? Ab consequatur dolore error est explicabo, in inventore iusto, magni nostrum quae sit suscipit unde veniam.</span><span>Ab blanditiis consequatur cupiditate doloribus eaque, earum eum explicabo harum, in inventore molestias, neque nihil odit perspiciatis quidem ratione saepe sed sit sunt ut. Iste numquam optio possimus sit tempora?</span><span>Accusantium animi, debitis dicta esse et, id libero molestiae nobis quia reprehenderit sed sit. Cum, cupiditate distinctio magnam nihil quam quod, repellat repellendus rerum sint sunt totam, velit veritatis voluptatem.</span><span>Adipisci cupiditate dignissimos laborum molestiae nobis repudiandae veniam vitae voluptas. Ab enim molestiae nam provident quo quod sint tempore. Ad at eius hic incidunt inventore maiores quasi, ratione sint veritatis.</span><span>Architecto deleniti fugit molestias, nesciunt nostrum praesentium sed? Aliquam animi aperiam debitis deserunt ea eos est eveniet ipsum itaque iusto odio perspiciatis possimus quasi quis repudiandae suscipit tempore, totam ut?</span>
 
     <div class="card" style="width: 18rem;">
-        <img src="https://placehold.co/600x400/000000/FFFFFF/png" class="card-img-top" alt="...">
+        <img src="{% get_media_prefix %}WhatsApp Image 2024-05-17 at 19.12.52.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -20,11 +21,11 @@
         </div>
     </div>
 
-  {% endblock %}
+{% endblock %}
 {% block extra_scripts %}
-<script>
-console.log('FENERBAHÇE');
-</script>
-    
-    
+    <script>
+        console.log('FENERBAHÇE');
+    </script>
+
+
 {% endblock %}
